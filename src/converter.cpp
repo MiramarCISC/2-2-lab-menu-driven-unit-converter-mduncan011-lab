@@ -34,19 +34,18 @@ double celsiusToFahrenheit(double celsius) {
 }
 
 bool isValidMenuChoice(int choice) {
-    // TODO: return true when choice is between EXIT_CHOICE and CELSIUS_TO_FAHRENHEIT.
+    // return true when choice is between EXIT_CHOICE and CELSIUS_TO_FAHRENHEIT.
     return (choice >= EXIT_CHOICE && choice <= CELSIUS_TO_FAHRENHEIT);
 }
 
 bool requiresNonNegativeValue(int choice) {
     // Length and weight conversions cannot use negative values.
     // Temperature conversions may use negative values.
-    // TODO: return true for choices 1 through 4.
+    // return true for choices 1 through 4.
     return (choice >= INCHES_TO_CENTIMETERS && choice <= KILOGRAMS_TO_POUNDS);
 }
 
 bool isValidValueForChoice(int choice, double value) {
-    // TODO:
     // 1. Invalid menu choices should return false.
     // 2. Length and weight conversions should reject negative values.
     // 3. Temperature conversions should allow negative values.
